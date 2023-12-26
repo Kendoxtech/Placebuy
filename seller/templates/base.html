@@ -1,0 +1,27 @@
+{% load static %} 
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock %}</title>
+    <link href="{% static 'css\base.css' %}" rel="stylesheet" />
+  </head>
+  <body>
+    <section id="header">
+      <span class="logo">Place Buy</span>
+      {% if request.user.is_authenticated %}
+      <ul class="menu">
+        <li {% if section == "dashboard" %} class="selected" {% endif %}>
+
+        </li>
+      </ul>
+      {% endif %}
+    </section>
+    <section id="content">
+      {% block content %} 
+      {% endblock %}
+    </section>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+@import url(//fonts.googleapis.com/css?family=Muli);
+
+body {
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+p {
+    line-height: 1.8;
+}
+
+a {
+    color: aquamarine;
+    text-decoration: none;
+}
+
+a:hover {
+    color: brown;
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Muli', sans-serif; font-weight: normal;}
+
+h1 {
+    border-bottom: 1px solid;
+    padding:0 0 10px 0;
+    margin:10px 0 20px 0;
+}
+
+h2 {
+    margin: 30px 0 20px;
+}
+
+ol {
+    line-height: 1.5;
+}
+/* CSS for header */
+
+#header {
+    padding: 10px 100px;
+    font-size: 20px;
+    background: #453;
+    border-bottom: 10px solid #4232;
+    overflow: auto;
+
+}
+
+#header .logo {
+    font-family: 'Muli', sans-serif;
+    float:left;
+    color:burlywood;
+    font-size:28px;
+    
+    font-weight: bolder;
+    margin-top: 2%;
+    
+}
+
+#header ul.menu li {
+    float:left;
+    padding:4px 10px;
+    padding-left: 20px;
+}
+
+
+
+
+#header .user {
+    float:right;
+    padding-top: 4px;
+}
+
+/* Css for content */
+
+#content {
+    padding:30px 100px;
+}
+
+/* css for forms */
+
+form p {
+    width: 100%;
+    overflow: auto;
+}
+
+form {
+    overflow: auto;
+}
+
+label {
+    float: left;
+    clear: both;
+    color: rgb(119, 110, 128);
+    margin-bottom: 4px;
+}
+
+input, textarea {
+   clear: both;
+   margin:0 15px 10px;
+   background: 0;
+   padding: 6px 10px;
+   font-size: 14px;
+}
+
+input[type=submit], a.button {
+    font-weight: bold;
+    background: #543;
+    color: #219;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    
+}
+
+.errorlist {
+    margin: 0 0 20px 0;
+    color: cadetblue;
+    clear: both;
+    float: left;
+    font-size: 13px;
+}
+
+.helptext {
+    margin:10px 100px;
+    color: #693;
+    clear: both;
+    float: left;
+    font-size: 13px;
+}
+
+
+/* Message */
+
+ul.messages {
+    margin: 10px 100px;
+    padding:0;
+    list-style: none;
+}
+
+ul.messages li.success, 
+ul.messages li.warning,
+ul.messages li.error,
+ul.messages li.info {
+    margin: 0;
+    padding: 14px 20px;
+    list-style: none;
+    color:aquamarine;
+}
+
+ul.messages li.success {background: #219;}
+ul.messages li.success {color: #453;}
+
+ul.messages li.error { background: #684;}
+ul.meesages li.error { color: #323;}
+
+
+ul.messages li.info { background: #643;}
+ul.messages li.info { color: #235;}
+
+ul.messages li.warning { background: #583;}
+ul.messages li.warning { color: #088;}
+
+ul.messages li a.close {
+    margin:0;
+    float: right;
+    opacity: 1;
+    border:0;
+    box-shadow: none;
+}
+
+.login-form {
+    float: left;
+}
